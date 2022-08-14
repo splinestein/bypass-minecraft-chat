@@ -60,9 +60,10 @@ public final class Idkbro extends JavaPlugin implements Listener {
         System.out.println("The prefix is: " + prefix);
 
         if (event.getPlayer().isOp()) {
-            getServer().broadcastMessage(ChatColor.RED + "[Owner] " + ChatColor.WHITE + event.getPlayer().getName() + ": " + event.getMessage());
+            //getServer().broadcastMessage(ChatColor.RED + "[Owner] " + ChatColor.WHITE + event.getPlayer().getName() + ": " + event.getMessage());
+            getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', prefix + ChatColor.WHITE + event.getPlayer().getName() + ": " + event.getMessage()));
         } else {
-            getServer().broadcastMessage(ChatColor.GRAY + "[Member] " + ChatColor.WHITE + event.getPlayer().getName() + ": " + event.getMessage());
+            getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', prefix + ChatColor.WHITE + event.getPlayer().getName() + ": " + event.getMessage()));
         }
     }
 }
