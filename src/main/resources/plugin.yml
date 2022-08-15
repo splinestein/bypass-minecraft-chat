@@ -1,0 +1,7 @@
+name: FreedomOfSpeech
+version: '${project.version}'
+main: com.zapmek.freedomofspeech.FreedomOfSpeech
+api-version: 1.19
+authors: [ zapmek ]
+description: Report Bypass & Chat Preview Bypass Plugin
+website: https://www.zapmek.com
